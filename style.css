@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height:80vh; */
     padding:50px 600px;
     width: 300px;
  }
@@ -56,7 +55,7 @@ body::before{
     top: 25px;
     left:30px;
     width: 180px;
-    min-height: 310px;
+    min-height: 330px;
  }
 
  .input-group{
@@ -130,7 +129,7 @@ option{
 .warning_list{
     position: absolute;
     max-width: 170px;
-    min-height: 290px;
+    max-height: 310px;
     margin-top: 19px;
     left: 240px;
     top:25px;
