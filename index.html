@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>門市貨量回報</title>
+  <title>門市實際貨量回報</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script
   src="https://code.jquery.com/jquery-3.3.1.js"
@@ -12,17 +12,44 @@
   crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <div>
-      <span>您的大名：</span><input id="nameValue" type="text">
+  <div class="outlook">
+    <div class="container">
+      <div class="info">
+        <div class="input-group">
+          <label for="">*請輸入日期</label>
+          <select name="date" id="dateValue">
+              <option value=""></option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="">*請選填縣市</label>
+          <select name="county" id="nameValue">
+              <option value=""></option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="">*請選填門市</label>
+          <select name="district" id="phoneValue">
+              <option value=""></option>
+          </select>
+        </div>
+        <div class="input-group">
+          <input class="nameinput" type="text" id="demandValue">
+          <label for="">*請輸入名字</label>
+        </div>
+        <div class="input-group">
+          <input  class="qtyinput" type="text" id="reportValue">
+          <label for="">*請輸入實際貨量</label>
+        </div>
+        <div class="warning_list">
+          <span class="warning">1.	所有欄位皆為必填，若任一欄位留白或為亂碼將不採計該次回報。</span><br><br>
+          <span class="warning">2.	貨量異常調整僅開放於10日內完成，超過時間則不再做調整。</span><br><br>
+          <span class="warning">3.  實際貨量請直接填寫當日門市貨量，請勿自行扣除異常件。</span><br><br>
+          <span class="warning">4.	若經查實提供不實回報，則將不再採計任何後續回報內容。</span><br>
+        </div>
+        <button class="btn">送出</button>
+      </div>
     </div>
-    <div>
-      <span>您的電話：</span><input id="phoneValue" type="text">
-    </div>
-    <div>
-      <span>您的需求：</span><input id="demandValue" type="text">
-    </div>
-    <button>送出</button>
   </div>
   <script type="text/javascript" src="index.js"></script>
 
