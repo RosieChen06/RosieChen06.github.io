@@ -55,7 +55,7 @@ body::before{
     top: 25px;
     left:30px;
     width: 180px;
-    min-height: 330px;
+    min-height: 310px;
  }
 
  .input-group{
@@ -129,7 +129,7 @@ option{
 .warning_list{
     position: absolute;
     max-width: 170px;
-    max-height: 310px;
+    min-height: 290px;
     margin-top: 19px;
     left: 240px;
     top:25px;
