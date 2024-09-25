@@ -151,8 +151,9 @@ option{
 .warning_list{
     position: absolute;
     width: 170px;
-    min-height: 290px;
+    max-height: 290px;
     margin-top: 19px;
+    overflow: hidden;
     left: 210px;
     top:0;
     margin-right: 12px;
