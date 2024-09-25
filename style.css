@@ -39,7 +39,7 @@ body::before{
     position: relative;
     background: transparent;
     margin-top: 10%;
-    width: 485px;
+    width: 435px;
     min-height:380px;
     padding: 20px 50px;
     border: 2px solid black;
@@ -67,7 +67,7 @@ body::before{
  }
 
 select{
-    width: 250px;
+    width: 200px;
     height: 35px;
     padding: 10px;
     color: #fff;
@@ -79,7 +79,7 @@ select{
 
 .nameinput{
     position: absolute;
-    width: 250px;
+    width: 200px;
     height: 35px;
     color: #fff;
     background: transparent;
@@ -91,7 +91,7 @@ select{
 
  .qtyinput{
     position: relative;
-    width: 250px;
+    width: 200px;
     height: 35px;
     color: #fff;
     background: transparent;
@@ -100,14 +100,6 @@ select{
     outline: none;
     padding: 15px;
  } 
-
- .img{
-    position: absolute;
-    left: 180px;
-    top: 225px;
-    width: 100px;
-    height: 35px;
- }
 
 label{
     position: absolute;
@@ -125,12 +117,11 @@ label{
     top: 278.5px;
     border: 1.2px solid #0ef;
     background: #0ef;
-    width: 250px;
     height: 20px;
     text-align: center;
     color: black;
     border-radius: 5px;
-    width: 250px;
+    width: 200px;
     height:30px;
     font-weight: 500;
 }
@@ -161,7 +152,7 @@ option{
     width: 170px;
     height: 290px;
     margin-top: 19px;
-    left: 260px;
+    left: 210px;
     top:0;
     margin-right: 12px;
     text-align: justify;
