@@ -12,13 +12,31 @@
     align-items: center;
     padding:50px 600px;
     width: 300px;
+    height: auto;
  }
 
-body::before{
+
+ .container{
+    position: relative;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    width: 430px;
+    height:300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 50px #0ef;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 350px;
+ }
+
+ .container::before{
     position: absolute;
     content: "";
-    height: 500px;
-    width:700px;
+    height: 600px;
+    width: 800px;
     background:
     linear-gradient(to right, #0ef 4px, transparent 4px) 0 0,
     linear-gradient(to right, #0ef 4px, transparent 4px) 0 100%,
@@ -30,31 +48,14 @@ body::before{
     linear-gradient(to top, #0ef 4px, transparent 4px) 100% 100%;
 
     background-repeat: no-repeat;
-    background-size: 100px 100px;
-    top:50%;
-    transform: translateY(-50%);
+    background-size: 150px 150px;
+    top:-110px;
+    left: -182.5px;
  }
-
- .container{
-    position: relative;
-    background: transparent;
-    margin-top: 10%;
-    width: 435px;
-    min-height:380px;
-    padding: 20px 50px;
-    border: 2px solid black;
-    border-radius: 20px;
-    backdrop-filter:blur(20px);
-    box-shadow: 0 0 50px #0ef;
-    margin-top: 25%;
- }
-
 
  .info{
-    position: absolute;
-    top: 25px;
-    left:30px;
-    width: 180px;
+    position: relative;
+    width: 200px;
     height: auto;
  }
 
@@ -101,6 +102,27 @@ select{
     padding: 15px;
  } 
 
+ .btn{
+    position: absolute;
+    left:20px;
+    bottom: 30px;
+    border: 1.2px solid #0ef;
+    background: #0ef;
+    height: 20px;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    width: 200px;
+    height:30px;
+    font-weight: 500;
+}
+
+.btn:hover{
+    cursor: pointer;
+    font-weight: 600;
+    background: rgb(48, 228, 241);
+}
+
 label{
     position: absolute;
     top: 50%;
@@ -128,41 +150,20 @@ option{
 
 .warning_list{
     position: absolute;
-    max-width: 170px;
+    width: 170px;
     height: auto;
-    margin-top: 19px;
-    left: 240px;
-    top:25px;
+    bottom: 30px;
+    top: 45px;
+    right:20px;
     text-align: justify;
     border: transparent;
     border-radius: 4px;
     background: rgb(34, 34, 34);
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 
 .warning{
     /* writing-mode: vertical-lr; */
     color: #fff;
     font-size: 13px;
-}
-
-.btn{
-    position: absolute;
-    left:0px;
-    bottom: -50px;
-    border: 1.2px solid #0ef;
-    background: #0ef;
-    height: 20px;
-    text-align: center;
-    color: black;
-    border-radius: 5px;
-    width: 200px;
-    height:30px;
-    font-weight: 500;
-}
-
-.btn:hover{
-    cursor: pointer;
-    font-weight: 600;
-    background: rgb(48, 228, 241);
 }
