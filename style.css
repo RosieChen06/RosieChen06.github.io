@@ -56,7 +56,7 @@ body::before{
     top: 25px;
     left:30px;
     width: 180px;
-    height: 290px;
+    min-height: 290px;
  }
 
  .input-group{
@@ -115,7 +115,7 @@ label{
 .btn{
     position: absolute;
     left:0px;
-    top: 271px;
+    top: 278px;
     border: 1.2px solid #0ef;
     background: #0ef;
     height: 20px;
@@ -150,10 +150,9 @@ option{
 
 .warning_list{
     position: absolute;
-    width: 170px;
-    height: 290px;
+    max-width: 170px;
+    min-height: 290px;
     margin-top: 19px;
-    overflow: hidden;
     left: 240px;
     top:25px;
     text-align: justify;
