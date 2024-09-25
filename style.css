@@ -53,7 +53,7 @@ body::before{
 
  .info{
     position: absolute;
-    top: 20px;
+    top: 25px;
     left:30px;
     width: 180px;
     min-height: 290px;
@@ -115,7 +115,7 @@ label{
 .btn{
     position: absolute;
     left:0px;
-    top: 278.5px;
+    top: 273px;
     border: 1.2px solid #0ef;
     background: #0ef;
     height: 20px;
@@ -154,9 +154,8 @@ option{
     max-height: 290px;
     margin-top: 19px;
     overflow: hidden;
-    left: 210px;
-    top:0;
-    margin-right: 12px;
+    left: 240px;
+    top:25px;
     text-align: justify;
     border: transparent;
     border-radius: 4px;
