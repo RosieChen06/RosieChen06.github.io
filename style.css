@@ -67,7 +67,7 @@ body::before{
  }
 
 select{
-    width: 250px;
+    width: 200px;
     height: 35px;
     padding: 10px;
     color: #fff;
@@ -79,7 +79,7 @@ select{
 
 .nameinput{
     position: absolute;
-    width: 250px;
+    width: 200px;
     height: 35px;
     color: #fff;
     background: transparent;
@@ -91,7 +91,7 @@ select{
 
  .qtyinput{
     position: relative;
-    width: 250px;
+    width: 200px;
     height: 35px;
     color: #fff;
     background: transparent;
