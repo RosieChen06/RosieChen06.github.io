@@ -55,7 +55,7 @@ body::before{
     top: 25px;
     left:30px;
     width: 180px;
-    min-height: 310px;
+    height: auto;
  }
 
  .input-group{
@@ -129,7 +129,7 @@ option{
 .warning_list{
     position: absolute;
     max-width: 170px;
-    min-height: 290px;
+    height: auto;
     margin-top: 19px;
     left: 240px;
     top:25px;
@@ -137,7 +137,7 @@ option{
     border: transparent;
     border-radius: 4px;
     background: rgb(34, 34, 34);
-    padding: 0.5rem 1rem;
+    padding: 5px 10px;
 }
 
 .warning{
@@ -149,7 +149,7 @@ option{
 .btn{
     position: absolute;
     left:0px;
-    bottom: 0px;
+    bottom: -50px;
     border: 1.2px solid #0ef;
     background: #0ef;
     height: 20px;
