@@ -160,6 +160,7 @@ option{
     border-radius: 4px;
     background: rgb(34, 34, 34);
     padding: 10px 10px;
+    overflow: hidden;
 }
 
 .warning{
