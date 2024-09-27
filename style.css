@@ -20,7 +20,7 @@
     margin-top: 70px;
     margin-bottom: 70px;
     width: 430px;
-    height:290px;
+    height: 365px;
     border: 2px solid black;
     border-radius: 20px;
     backdrop-filter:blur(20px);
@@ -28,7 +28,6 @@
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 350px;
  }
 
  .container::before{
