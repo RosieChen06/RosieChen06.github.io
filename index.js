@@ -1,4 +1,4 @@
-let sendButton = document.querySelector('button');
+let sendButton = document.querySelector('.btn');
 
 function send() {
   let date = document.querySelector('#dateValue').value;
@@ -93,3 +93,15 @@ county_box.addEventListener('change', () => {
         district_box.innerHTML += `<option value="${district}">${district}</option>`;
     });
 })
+
+const openppopup = document.querySelector(".clickmebtn");
+const closeppopup = document.querySelector(".popupbtn");
+const popup = document.getElementById("popup");
+
+openppopup.addEventListener('click',()=>{
+    popup.classList.add('active');
+});
+
+closeppopup.addEventListener('click',()=>{
+    popup.classList.remove('active');
+});
