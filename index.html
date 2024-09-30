@@ -6,17 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>門市實際貨量回報</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="colorblock">
+  </div>
   <div class="outlook">
     <div class="container">
+    <button class="clickmebtn">填寫說明</button>
       <div class="info">
         <div class="input-group">
-          <label for="">*請輸入日期</label>
+          <label for="">*請選填日期</label>
           <select name="date" id="dateValue">
               <option value=""></option>
           </select>
@@ -41,14 +45,16 @@
           <input  class="qtyinput" type="text" id="reportValue">
           <label for="">*請輸入實際貨量</label>
         </div>
+        <button class="btn">送出</button>
+        <dev id="popup">
+            <i class='bx bx-error-circle'></i>
+            <p>1. 所有欄位皆為必填，若任一欄位留白或為亂碼將不採計該次回報。</p>
+            <p>2. 貨量異常調整僅開放於10日內完成，超過時間則不再做調整。</p>
+            <p>3. 實際貨量請直接填寫當日門市貨量，請勿自行扣除異常件。</p>
+            <p>4. 一旦查證提供不實回報，將被取消回報資格。</p>
+            <button class="popupbtn">確認</button>
+        </dev>
       </div>
-      <div class="warning_list">
-        <span class="warning">1.	所有欄位皆為必填，若任一欄位留白或為亂碼將不採計該次回報。</span><br><br>
-        <span class="warning">2.	貨量異常調整僅開放於10日內完成，超過時間則不再做調整。</span><br><br>
-        <span class="warning">3.  實際貨量請直接填寫當日門市貨量，請勿自行扣除異常件。</span><br><br>
-        <span class="warning">4.	一旦查證提供不實回報，將被取消回報資格。</span><br>
-      </div>
-      <button class="btn">送出</button>
     </div>
   </div>
   <script type="text/javascript" src="index.js"></script>
