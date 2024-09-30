@@ -6,53 +6,97 @@
  }
 
  body{
-    background: black;
+    position: relative;
+    background: #6383fa;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top:50px;
     width: 100%;
-    height: 740px;
+    height: 100vh;
+ }
+
+ body::before{
+    content: "";
+    position: absolute;
+    top:0;
+    height:30%;
+    width:100%;
+    background: #fff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
  }
 
  .container{
-    position: relative;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    width: 430px;
-    height: 365px;
-    border: 2px solid black;
-    border-radius: 20px;
-    backdrop-filter:blur(20px);
-    box-shadow: 0 0 50px #0ef;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
- }
-
- .container::before{
     position: absolute;
-    content: "";
-    height: 600px;
-    width: 800px;
-    background:
-    linear-gradient(to right, #0ef 4px, transparent 4px) 0 0,
-    linear-gradient(to right, #0ef 4px, transparent 4px) 0 100%,
-    linear-gradient(to left, #0ef 4px, transparent 4px) 100% 0,
-    linear-gradient(to left, #0ef 4px, transparent 4px) 100% 100%,
-    linear-gradient(to bottom, #0ef 4px, transparent 4px) 0 0,
-    linear-gradient(to bottom, #0ef 4px, transparent 4px) 100% 0,
-    linear-gradient(to top, #0ef 4px, transparent 4px) 0 100%,
-    linear-gradient(to top, #0ef 4px, transparent 4px) 100% 100%;
-
-    background-repeat: no-repeat;
-    background-size: 150px 150px;
-    top:-110px;
-    left: -182.5px;
+    top:30%;
+    left: 48.5%;
+    transform: translateX(-50%);
+    min-width: 450px;
+    min-height: 450px;
+    padding:30px 20px;
  }
+
+ .container:hover{
+    border-radius: 50%;
+ }
+
+ .clickmebtn{
+    width:auto;
+    position: relative;
+    top:15px;
+    left: 25%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    border-radius:5px;
+    border-color: transparent; 
+    cursor: pointer;
+    padding: 5px;
+    text-align: left;
+}
+
+#popup{
+    position: absolute;
+    top:120px;
+    transform: translateY(-50%) scale(0.1);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    width: 250px;
+    visibility: hidden;
+    transition: all 0.05s ease-out;
+}
+
+#popup.active{
+    transform: translateY(-50%) scale(1.0);
+    visibility: visible;
+}
+
+i{
+    color: rgb(246, 238, 5);
+    font-size: 70px;
+}
+
+p{
+    padding: 5px;
+}
+
+.popupbtn{
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    width: 100%;
+    cursor: pointer;
+}
 
  .info{
     position: relative;
+    top:15px;
+    left: 25%;
     width: 200px;
     height: auto;
  }
@@ -65,52 +109,28 @@
     margin-top: 20px;
  }
 
-select{
-    width: 200px;
-    height: 35px;
-    padding: 10px;
-    color: #fff;
+ select, input{
+    width:250px;
+    height:30px;
     background: transparent;
-    border: 1.2px solid #fff;
-    border-radius: 5px;
-    outline: none;
+    outline: #fff;
+    border:2px solid #fff;
+    border-radius: 10px;
+    padding: 2px 0px 2px 5px;
  }
-
-.nameinput{
-    position: absolute;
-    width: 200px;
-    height: 35px;
-    color: #fff;
-    background: transparent;
-    border: 1.2px solid #fff;
-    border-radius: 5px;
-    outline: none;
-    padding: 15px;
- }
-
- .qtyinput{
-    position: relative;
-    width: 200px;
-    height: 35px;
-    color: #fff;
-    background: transparent;
-    border: 1.2px solid #fff;
-    border-radius: 5px;
-    outline: none;
-    padding: 15px;
- } 
 
  .btn{
     position: absolute;
-    left:20px;
-    bottom: 30px;
-    border: 1.2px solid #0ef;
-    background: #0ef;
+    left:62.5%;
+    transform: translateX(-50%);
+    bottom: -60px;
+    border: 1.2px solid #fff;
+    background: #fff;
     height: 20px;
     text-align: center;
     color: black;
     border-radius: 5px;
-    width: 200px;
+    width: 250px;
     height:30px;
     font-weight: 500;
 }
@@ -118,7 +138,8 @@ select{
 .btn:hover{
     cursor: pointer;
     font-weight: 600;
-    background: rgb(48, 228, 241);
+    background: #496df1;
+    color: #fff;
 }
 
 label{
@@ -132,36 +153,13 @@ label{
  }
 
 label{
-    color: rgb(142, 141, 141);
-}
-
-label{
     top:0;
     font-size:12px;
-    background: black;
-    color: #fff;
+    background: #6383fa;
+    color: black;
+    font-weight: 500;
 }
 
 option{
     color:black;
-}
-
-.warning_list{
-    position: absolute;
-    width: 170px;
-    height: auto;
-    bottom: 30px;
-    top: 45px;
-    right:20px;
-    text-align: justify;
-    border: transparent;
-    border-radius: 4px;
-    background: rgb(34, 34, 34);
-    padding: 10px 10px;
-}
-
-.warning{
-    /* writing-mode: vertical-lr; */
-    color: #fff;
-    font-size: 13px;
 }
