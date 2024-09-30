@@ -27,11 +27,18 @@
     border-bottom-right-radius: 50%;
  }
 
- img{
-    transform: rotate(25deg);
+ .paperplane{
     position: absolute;
-    top:-0.5%;
-    right:15%;
+    height: 100PX;
+    width: 100PX;;
+    font-size: 65px;
+    color: #6383fa;
+    top:5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid #6383fa;
+    border-radius: 50%;
+    padding: 10px 10px;
  }
 
  .container{
@@ -62,20 +69,6 @@
     text-align: left;
     color: black;
 }
-
-/* .clickmebtn{
-    width:auto;
-    position: relative;
-    top:-30px;
-    left: 37%;
-    transform: translateY(-50%);
-    font-size: 35px;
-    border-radius:5px;
-    border-color: transparent; 
-    cursor: pointer;
-    padding: 5px;
-    text-align: left;
-} */
 
 #popup{
     position: absolute;
@@ -153,8 +146,6 @@ p{
     padding: 2px 0px 2px 10px;
     color: black;
  }
-
-
 
  .btn{
     position: absolute;
