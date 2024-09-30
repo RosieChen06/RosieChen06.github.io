@@ -30,7 +30,7 @@
  img{
     transform: rotate(25deg);
     position: absolute;
-    top:0%;
+    top:-0.5%;
     right:15%;
  }
 
